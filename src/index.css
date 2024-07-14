@@ -1,0 +1,878 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fff9f3;
+}
+li {
+  list-style: none;
+}
+a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+button {
+  outline: none;
+  border: none;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  cursor: pointer;
+}
+input,
+button {
+  border: 1px solid rgba(206, 206, 206, 0.753);
+}
+
+.navbar {
+  display: flex;
+  padding: 1rem 2rem;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+  position: relative;
+  z-index: 9999;
+  position: fixed;
+  width: 100%;
+  padding: 0 2rem;
+  top: 0;
+  width: calc(100% - 4rem);
+  left: 0;
+  color: white;
+  transition: all 0.3s ease;
+}
+.scrolled {
+  background: radial-gradient(
+    circle,
+    rgb(0, 128, 255) 43%,
+    rgb(0, 128, 255) 81%,
+    rgb(42, 120, 255) 98%
+  );
+}
+.left-nav {
+  display: flex;
+  align-items: center;
+  line-height: 15px;
+}
+.left-nav p {
+  font-size: 13px;
+}
+.left-nav img {
+  height: 5rem;
+}
+.middle-nav {
+  width: 30%;
+}
+.links ul {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  font-weight: 600;
+  position: relative;
+  z-index: 1;
+}
+.right-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 11%;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+}
+.right-nav button,
+.float-links > button {
+  padding: 13px 15px;
+  border-radius: 5px;
+  background-color: rgb(67, 185, 67);
+  font-size: 15px;
+  font-weight: 400;
+  color: white;
+}
+.right-nav span {
+  cursor: pointer;
+}
+.header {
+  position: relative;
+  height: 85vh;
+  color: white;
+  background: rgb(0, 149, 255);
+  background: radial-gradient(
+    circle,
+    rgb(0, 128, 255) 43%,
+    rgba(0, 128, 255, 0.866) 81%,
+    rgb(42, 120, 255) 98%
+  );
+  margin: 0;
+}
+.header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url("./pages/images/joblogo.svg");
+  background-repeat: no-repeat;
+  background-position-x: 95%;
+  background-position-y: 80%;
+  background-size: 30rem;
+}
+.header-detail {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 60%;
+  align-items: flex-start;
+  padding-left: 10rem;
+  padding-top: 5rem;
+  height: 80%;
+  justify-content: center;
+  z-index: 111;
+}
+.header-detail h3 {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 400;
+}
+.header-detail h2 {
+  font-size: 40px;
+  margin: 10px 0;
+}
+.header-detail p {
+  margin: 0;
+}
+.header-detail button {
+  margin-top: 2rem;
+  padding: 14px 18px;
+  color: white;
+  background-color: rgb(67, 185, 67);
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 400;
+}
+#homepage {
+  height: 100%;
+}
+.jobsearch {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+  background-color: rgb(255, 249, 243);
+}
+.jobsearch form {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 65%;
+  box-sizing: border-box;
+}
+.jobsearch form input {
+  width: 13rem;
+  border-radius: 5px;
+  height: 2.3rem;
+  outline: none;
+  padding: 0 1rem;
+  color: rgba(0, 0, 0, 0.92);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+#all {
+  width: 5%;
+  color: white;
+  background-color: rgb(67, 185, 67);
+  justify-content: center;
+}
+.jobsearch button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  width: 13rem;
+  border-radius: 5px;
+  height: 2.3rem;
+  background-color: white;
+
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+.jobsearch button h4 {
+  font-weight: 400;
+  color: gray;
+}
+#arrow {
+  height: 1rem;
+}
+#job-title {
+  cursor: pointer;
+  text-wrap: auto;
+}
+#job-title:hover {
+  text-decoration: underline;
+}
+.option,
+.option2 {
+  position: absolute;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  top: 2.3rem;
+  left: 0;
+  visibility: hidden;
+  border: 1px solid rgba(212, 212, 212, 0.782);
+  border-radius: 5px;
+  transition: all 0.1s ease-in-out;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+  word-wrap: break-word;
+}
+.option a,
+.option2 a {
+  padding: 0.6rem 5px;
+  color: rgb(117, 117, 117);
+  border-bottom: 1px solid rgba(171, 171, 171, 0.271);
+  text-wrap: auto;
+}
+.option a:hover,
+.option2 a:hover {
+  background-color: rgb(67, 185, 67);
+  color: white;
+}
+.option.expanded,
+.option2.expanded,
+.profile.expanded {
+  visibility: visible;
+  z-index: 1;
+}
+#submit {
+  background-color: rgb(67, 185, 67);
+  color: white;
+  border: none;
+  justify-content: center;
+}
+.login,
+.signup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(0, 128, 255);
+  overflow: hidden;
+}
+.login form {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  width: 40%;
+  background-color: white;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+.signup form {
+  display: flex;
+  flex-direction: column;
+  padding: 0 2rem;
+  width: 40%;
+  background-color: white;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 5rem;
+}
+.login h4,
+.signup h4 {
+  font-size: 25px;
+  color: rgb(67, 185, 67);
+  font-weight: 600;
+}
+.login form input {
+  width: 50%;
+  border-radius: 1px;
+  font-size: 15px;
+  height: 3.5rem;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(198, 198, 198, 0.667);
+  padding: 0 1rem;
+  box-shadow: 0px 0px 3px rgba(55, 55, 55, 0.1);
+  margin-bottom: 2rem;
+}
+.signup form input {
+  width: 50%;
+  border-radius: 1px;
+  font-size: 15px;
+  height: 2.3rem;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(198, 198, 198, 0.667);
+  padding: 0 1rem;
+  box-shadow: 0px 0px 3px rgba(55, 55, 55, 0.1);
+  margin-bottom: 1rem;
+}
+.login form button,
+.signup form button {
+  width: 56%;
+  height: 3.5rem;
+  background-color: rgb(67, 185, 67);
+  color: white;
+  border: none;
+  justify-content: center;
+  font-size: 14px;
+}
+.login p,
+.signup p {
+  color: rgba(87, 87, 87, 0.782);
+}
+.login span,
+.signup span {
+  color: rgb(67, 185, 67);
+  cursor: pointer;
+}
+.stato {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  padding: 0;
+}
+.radio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#option1,
+#option2 {
+  margin: 0;
+}
+.radio h5 {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(78, 78, 78);
+}
+#company-icon {
+  width: 4rem;
+  margin-right: 12px;
+}
+.jobs {
+  padding: 3rem;
+  width: 50%;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+.jobs h3 {
+  font-size: 18px;
+  font-weight: 600;
+  width: 70%;
+  text-align: left;
+  margin-bottom: 0;
+  color: black;
+  margin-bottom: 1rem;
+}
+.job {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+  padding: 1rem 0;
+}
+.job:not(:last-child) {
+  border-bottom: 1px solid rgba(188, 188, 188, 0.367);
+}
+.job-details {
+  width: 100%;
+}
+#job-title,
+#candidatename {
+  font-size: 17px;
+  color: rgb(57, 120, 188);
+}
+#job-title {
+  margin-bottom: 6px;
+}
+#company {
+  font-size: 14px;
+  font-weight: 600;
+  color: black;
+  margin: 0;
+}
+.Jobdetail {
+  background-color: rgb(255, 249, 243);
+}
+#job-location {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(111, 111, 111);
+  margin-top: 6px;
+}
+#left-side-job {
+  display: flex;
+  width: 100%;
+}
+.job button {
+  width: 3.8rem;
+  height: 2.5rem;
+  border: none;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(255, 52, 52);
+  color: white;
+  font-size: 14px;
+}
+.dashboard {
+  position: relative;
+  min-height: 100vh;
+}
+#dashboard-nav {
+  background-color: rgb(0, 128, 255);
+}
+#user {
+  height: 2.1rem;
+  cursor: pointer;
+}
+.right-nav-dashboard {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 9%;
+  position: relative;
+}
+.container {
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 249, 243);
+  overflow: hidden;
+}
+.user-options {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(83, 83, 83, 0.726);
+  align-items: baseline;
+  width: 25%;
+  height: 4.6rem;
+  margin-bottom: 1rem;
+  padding-top: 2rem;
+}
+.user-options h4 {
+  margin-bottom: 0;
+  padding: 12px;
+  font-size: 18px;
+  font-weight: 400;
+  color: rgb(111, 111, 111);
+  cursor: pointer;
+}
+.user-options h4:hover {
+  background-color: rgba(1, 92, 183, 0.1);
+  color: rgb(0, 52, 103);
+}
+.active {
+  border-bottom: 4px solid rgb(1, 92, 183);
+  color: black;
+  font-weight: 700 !important;
+}
+.option-container {
+  width: 100%;
+}
+.profile {
+  position: absolute;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  top: 2.3rem;
+  visibility: hidden;
+  border: 1px solid rgba(212, 212, 212, 0.782);
+  border-radius: 5px;
+  transition: all 0.1s ease-in-out;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
+}
+.profile a {
+  padding: 1rem 10px;
+  color: black;
+}
+#name {
+  text-decoration: underline;
+  font-size: 16px;
+  font-weight: 700;
+}
+#logout {
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+#logout:hover {
+  color: rgb(67, 185, 67);
+}
+.detail-container {
+  padding: 0 16rem;
+  padding-top: 7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 3rem;
+}
+.detail-container button,
+#apply2 {
+  padding: 0.8rem 1.5rem;
+  background-color: rgb(67, 185, 67);
+  color: white;
+  font-weight: 600;
+}
+.detail-container h2 {
+  font-size: 33px;
+  font-weight: 600;
+}
+.posizione {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.posizione h5 {
+  font-size: 15px;
+  font-weight: 400;
+}
+#posizione {
+  height: 2rem;
+  margin-right: 1rem;
+}
+.location {
+  line-height: 2px;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.description {
+  width: 70%;
+  height: max-content;
+  line-height: 30px;
+}
+.description p {
+  text-align: start;
+}
+.location h4 {
+  font-size: 20px;
+  padding: 1rem 0;
+  border-bottom: 3px solid rgb(0, 52, 103);
+  color: rgb(30, 30, 30);
+}
+.mymodal {
+  position: fixed; /* Stay in place */
+  z-index: 10; /* Sit on top */
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%; /* Full width */
+  height: 40%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(255, 255, 255); /* Black with opacity */
+  border-radius: 10px;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+.mymodal h3 {
+  font-size: 25px;
+}
+.mymodal > form {
+  width: 60%;
+  font-size: 18px;
+}
+.mymodal div {
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem 0;
+  text-overflow: ellipsis;
+}
+#close {
+  position: absolute;
+  top: 4.8%;
+  right: 7%;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+#close:hover {
+  transform: scaleX(1.1);
+}
+.mymodal input {
+  max-width: 60%;
+}
+.file-box {
+  font-size: 14px;
+  background: white;
+  outline: none;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  color: rgb(111, 111, 111);
+}
+#alljobs {
+  display: block;
+}
+#application {
+  display: none;
+}
+#job-post {
+  position: fixed; /* Stay in place */
+  z-index: 10; /* Sit on top */
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%; /* Full width */
+  height: 70%; /* Full height */
+  overflow: hidden; /* Enable scroll if needed */
+  background-color: rgb(255, 255, 255); /* Black with opacity */
+  border-radius: 10px;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 3rem;
+}
+#insert-form {
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 75%;
+}
+#dropdown {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+#descrizione {
+  height: 50%;
+  width: 80%;
+}
+#top {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 5rem;
+  padding: 5px 3.5rem;
+  border-bottom: 1px solid rgba(201, 201, 201, 0.585);
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+}
+#top h4 {
+  font-size: 24px;
+  font-weight: 700;
+  color: rgb(10, 118, 196);
+}
+#posting {
+  padding: 27px 15px;
+  border-radius: 5px;
+  background-color: rgb(67, 185, 67);
+  font-size: 15px;
+  font-weight: 400;
+  color: white;
+  width: auto;
+}
+#closed {
+  background-color: rgb(205, 205, 205);
+}
+.candidates-container {
+  padding-top: 7rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  min-height: 73vh;
+}
+#nocandidates {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgba(145, 145, 145, 0.879);
+  font-size: 22px;
+}
+.candidatelist {
+  width: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#resume {
+  color: rgb(0, 52, 103);
+  text-decoration: underline;
+}
+#list {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.left {
+  width: 100%;
+}
+#candidate {
+  width: 60%;
+  transition: all 0.3s ease-in-out;
+  padding: 0.8rem 1rem;
+  border-radius: 5px;
+}
+#nomejob {
+  margin-bottom: 5rem;
+  font-size: 28px;
+}
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  display: none; /* Initially hidden */
+  z-index: 9; /* Ensure it's above other content */
+}
+.Contact {
+  height: 5rem;
+  width: 100%;
+  background-color: rgb(255, 249, 243);
+  border-top: 1px solid rgba(220, 220, 220, 0.673);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: black;
+  position: inherit;
+  bottom: 0;
+}
+.contact-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 40%;
+}
+.contact-links h5,
+h4 {
+  font-weight: 400;
+  font-size: 14px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.contact-links h5:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.employer,
+.employee {
+  margin-top: 0.6rem;
+}
+#menu {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  top: 35%;
+  right: 10%;
+}
+#contact {
+  position: inherit;
+}
+#contactcss {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+#candidate:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 5px rgba(132, 218, 255, 0.455);
+  background-color: rgba(206, 239, 255, 0.355);
+}
+.float {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100vh;
+  background-color: blueviolet;
+  z-index: 9999;
+  color: white;
+  background: rgb(55, 124, 221);
+}
+.float-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  background: radial-gradient(
+    circle,
+    rgb(0, 128, 255) 43%,
+    rgb(0, 128, 255) 81%,
+    rgb(42, 120, 255) 98%
+  );
+  height: 10%;
+}
+.float-links {
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  justify-content: space-around;
+  align-items: center;
+}
+.float-links span {
+  cursor: pointer;
+}
+.float-links > button {
+  padding: 1rem 2rem;
+}
+.slidein {
+  animation: slidein 0.3s ease-in;
+}
+.slideout {
+  animation: slideout 0.3s ease-out;
+}
+.float-position {
+  left: 0;
+}
+@keyframes slidein {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 0;
+  }
+}
+@keyframes slideout {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: -100%;
+  }
+}
+#float-close {
+  cursor: pointer;
+  width: 1.6rem;
+}
+#searchjob {
+  margin-bottom: 5rem;
+}
+#candidatename span {
+  font-size: 13px;
+  font-weight: 400;
+}

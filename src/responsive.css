@@ -1,0 +1,488 @@
+@media (max-width: 1418px) {
+  .mymodal > form {
+    width: 70%;
+    font-size: 17px;
+  }
+  .jobsearch form {
+    width: 85%;
+  }
+  #job-post {
+    width: 60%;
+  }
+}
+@media (max-width: 1274px) {
+  .right-nav {
+    width: 15%;
+  }
+}
+@media (max-width: 1280px) {
+  .signup form input {
+    width: 70%;
+  }
+  .signup form button {
+    width: 77%;
+  }
+}
+@media (max-width: 1274px) {
+  .right-nav {
+    width: 15%;
+  }
+}
+@media (max-width: 1090px) {
+  .mymodal {
+    width: 55%;
+  }
+  .right-nav-dashboard {
+    width: 13%;
+  }
+  #logout {
+    font-size: 10px;
+  }
+  #name {
+    font-size: 13px;
+  }
+  .detail-container {
+    padding: 0 9rem;
+    padding-top: 7rem;
+  }
+  .stato {
+    width: 70%;
+  }
+  .jobsearch form input,
+  #paesi,
+  #categorie,
+  #submit {
+    width: 8rem;
+  }
+  .jobsearch form {
+    width: 68%;
+  }
+  .jobs {
+    width: 60%;
+  }
+  .header::after {
+    background-size: 25rem;
+  }
+}
+@media (max-width: 942px) {
+  .description {
+    width: 85%;
+  }
+  .right-nav {
+    width: 19%;
+  }
+  .header-detail {
+    padding-left: 5rem;
+  }
+  .header-detail h3 {
+    font-size: 26px;
+  }
+  .header-detail h2 {
+    font-size: 36px;
+  }
+  .header::after {
+    background-size: 18rem;
+    background-position-x: 85%;
+    background-position-y: 50%;
+  }
+  .login form {
+    width: 60%;
+  }
+  .signup form {
+    width: 55%;
+  }
+  .signup form button {
+    width: 80%;
+  }
+}
+@media (max-width: 876px) {
+  .left-nav img {
+    height: 4rem;
+  }
+  .left-nav h2 {
+    font-size: 18px;
+  }
+  .left-nav p {
+    font-size: 12px;
+  }
+  .left-nav {
+    line-height: 10px;
+  }
+  .header-detail h3 {
+    font-size: 20px;
+  }
+  .header-detail h2 {
+    font-size: 30px;
+  }
+  .header-detail p {
+    font-size: 13px;
+  }
+  .header::after {
+    background-size: 15rem;
+    background-position-x: 85%;
+    background-position-y: 50%;
+  }
+  .header-detail button {
+    font-size: 13px;
+  }
+  .jobsearch form {
+    width: 85%;
+  }
+  .contact-links {
+    width: 60%;
+  }
+  .contact-links h5,
+  h4 {
+    font-size: 13px;
+  }
+}
+@media (max-width: 800px) {
+  #jobid {
+    width: 90%;
+  }
+  .mymodal {
+    width: 70%;
+  }
+  .right-nav-dashboard {
+    width: 20%;
+  }
+  .user-options {
+    width: 35%;
+  }
+  .links ul {
+    font-size: 14px;
+  }
+  .right-nav {
+    font-size: 14px;
+  }
+  .right-nav button {
+    font-size: 14px;
+  }
+  .middle-nav {
+    width: 38%;
+  }
+}
+@media (max-width: 720px) {
+  .header-detail h3 {
+    font-size: 20px;
+  }
+  .header-detail h2 {
+    font-size: 27px;
+  }
+  .header-detail p {
+    font-size: 13px;
+  }
+  .header::after {
+    background-image: none;
+  }
+  .header-detail button {
+    font-size: 13px;
+  }
+  .right-nav {
+    width: 20%;
+  }
+  #job-post {
+    width: 75%;
+  }
+}
+
+@media (max-width: 698px) {
+  .jobsearch form {
+    width: 80%;
+  }
+  .jobsearch form input,
+  #paesi,
+  #categorie,
+  #submit {
+    width: 6rem;
+    box-sizing: border-box;
+  }
+  .jobsearch form input,
+  #paesi,
+  #all,
+  #categorie,
+  #submit {
+    height: 1.8rem;
+  }
+  .jobsearch form input,
+  #location-name,
+  #all,
+  #category-name {
+    font-size: 12px;
+  }
+  #arrow {
+    height: 0.6rem;
+  }
+  #submit {
+    width: 5rem;
+    font-size: 10px;
+  }
+  #pos,
+  #insert-form button {
+    width: 8rem;
+  }
+}
+@media (max-width: 690px) {
+  #posting {
+    padding: 20px 10px;
+    font-size: 14px;
+  }
+  #top h4 {
+    font-size: 20px;
+  }
+  .detail-container {
+    padding: 0 6rem;
+    padding-top: 7rem;
+  }
+  .user-options {
+    height: 4.3rem;
+  }
+  .user-options h4 {
+    font-size: 16px;
+  }
+  #menu {
+    display: block;
+  }
+  .links ul {
+    display: none;
+  }
+  .right-nav {
+    display: none;
+  }
+}
+@media (max-width: 620px) {
+  .job button {
+    width: 3rem;
+    height: 2rem;
+    font-size: 13px;
+  }
+  .employer {
+    width: 70%;
+  }
+  .mymodal > form {
+    width: 80%;
+  }
+  .login form button {
+    width: 70%;
+  }
+  .login form input {
+    width: 60%;
+    height: 2.4rem;
+  }
+  .left-nav img {
+    height: 3rem;
+  }
+  .left-nav h2 {
+    font-size: 16px;
+  }
+  .left-nav p {
+    font-size: 11px;
+  }
+  .job {
+    width: 85%;
+  }
+  .jobs h3 {
+    width: 85%;
+  }
+  #company-icon {
+    margin-right: 10px;
+  }
+}
+@media (max-width: 556px) {
+  #menu {
+    right: 12%;
+  }
+  #candidate {
+    width: 72%;
+  }
+  #nomejob {
+    font-size: 24px;
+    margin-bottom: 3rem;
+  }
+  #employerdetail {
+    width: 65%;
+  }
+  .mymodal {
+    width: 80%;
+  }
+  .right-nav-dashboard {
+    width: 27%;
+  }
+  .location h4 {
+    font-size: 17px;
+  }
+  .posizione h5 {
+    font-size: 14px;
+  }
+  .description p {
+    font-size: 14px;
+  }
+  .detail-container h2 {
+    font-size: 25px;
+  }
+  .user-options {
+    width: 45%;
+  }
+  .signup form {
+    width: 75%;
+  }
+  .left-nav img {
+    height: 3.2rem;
+  }
+  .header-detail {
+    width: 70%;
+    text-align: initial;
+  }
+  .jobsearch form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+  }
+  #all {
+    width: 100%;
+  }
+  #submit {
+    width: 100%;
+    grid-column: span 2;
+  }
+  .jobsearch form input,
+  #paesi,
+  #categorie {
+    width: 100%;
+  }
+  #company,
+  #job-location {
+    font-size: 12px;
+  }
+  #job-title {
+    font-size: 15px;
+  }
+  #company-icon {
+    width: 3.5rem;
+  }
+  .contact-links {
+    width: 70%;
+  }
+  .contact-links h5,
+  h4 {
+    font-size: 12px;
+  }
+  #insert-form {
+    display: flex;
+    width: 85%;
+  }
+  #job-post {
+    width: 85%;
+  }
+}
+@media (max-width: 500px) {
+  #menu {
+    right: 13%;
+  }
+}
+@media (max-width: 450px) {
+  #candidatename span {
+    font-size: 11px;
+  }
+  #menu {
+    right: 15%;
+  }
+  #nocandidates {
+    font-size: 19px;
+  }
+  #company-icon {
+    width: 3rem;
+  }
+  #nomejob {
+    font-size: 21px;
+  }
+  #candidatename {
+    font-size: 15px;
+  }
+  #resume {
+    font-size: 14px;
+  }
+  #posting {
+    padding: 18px 8px;
+  }
+  #top {
+    padding: 5px 2rem;
+  }
+  #top h4 {
+    font-size: 18px;
+  }
+  .employer {
+    width: 78%;
+    padding: 3rem 2rem;
+  }
+  .mymodal > form {
+    font-size: 15px;
+    width: 92%;
+  }
+  .mymodal {
+    width: 90%;
+  }
+  .mymodal h3 {
+    font-size: 22px;
+  }
+  #name {
+    font-size: 12px;
+  }
+  .detail-container {
+    padding: 0 4rem;
+    padding-top: 7rem;
+  }
+  .description {
+    width: 95%;
+  }
+  #user {
+    height: 1.8rem;
+  }
+  .user-options {
+    height: 4.2rem;
+  }
+  .user-options h4 {
+    font-size: 15px;
+  }
+  .login form {
+    width: 75%;
+  }
+  .login form button {
+    width: 93%;
+  }
+  .login form input {
+    width: 80%;
+    height: 2.4rem;
+  }
+  .login p,
+  .signup p {
+    font-size: 14px;
+  }
+  .radio h5 {
+    font-size: 14px;
+  }
+  .header-detail {
+    padding-left: 3rem;
+  }
+}
+@media (max-width: 410px) {
+  #menu {
+    right: 14%;
+  }
+  .job {
+    width: 85%;
+  }
+  .jobs h3 {
+    width: 85%;
+  }
+  #company-icon {
+    margin-right: 10px;
+  }
+  .contact-links {
+    width: 75%;
+  }
+  .contact-links h5,
+  h4 {
+    font-size: 11px;
+  }
+}
